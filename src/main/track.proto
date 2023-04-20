@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+// Options for the GRPC
+option java_multiple_files = true;
+option java_package = "Track";
+option java_outer_classname = "TrackImpl";
+
+package SmartCar;
+
+//Service Definition
+service TrackService{
+
+  //Unary RPC Method
+  rpc Track(TrackRequest) returns (TrackResponse);
+}
+
+/*
+Tracking is activated when the car is started
+ */
+
+message TrackRequest {
+  //No fields required for this message
+  }
+
+message TrackResponse {
+  string trackingStatus = 1;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+// Options for the GRPC
+option java_multiple_files = true;
+option java_package = "IndexPollution";
+option java_outer_classname = "IndexPollutionImpl";
+
+package SmartCar;
+
+// Service Definition
+service IndexPollution{
+
+  // Bidirectional Stream RPC Method
+  rpc Index(stream numberKmRequest) returns (stream analysisResponse){}
+}
+/*
+The client streams values per mileage data and the Server streams the analysis: Total Index of
+Pollution Emitted
+ */
+
+message numberKmRequest{
+  double km = 1;
+}
+message analysisResponse{
+  string total = 1;
+}

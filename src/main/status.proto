@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+// Options for the GRPC
+option java_multiple_files = true;
+option java_package = "Status";
+option java_outer_classname = "StatusImpl";
+
+package SmartCar;
+
+// Service Definition
+service FilterStatusService{
+
+  // Server Stream RPC Method
+  rpc Status (FilterStatusRequest) returns (stream FilterStatusResponse) {}
+}
+
+/*
+   The client (user/driver) requests the  status of the filter and getting
+   current situation back from the Server
+*/
+
+message FilterStatusRequest{
+    int32 filterStatus = 1;
+
+}
+message FilterStatusResponse{
+    double filterStatusCurr = 1;
+}

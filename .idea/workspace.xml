@@ -1,21 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="38081be4-c7f7-42c9-bdfb-92bcad15b05d" name="Changes" comment="" />
+    <list default="true" id="8c688d2b-846f-45e3-bdbf-3cbfe919d58f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/index.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/AnalysisResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/AnalysisResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/IndexGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/IndexImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/Index_Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/Index_client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/Index_server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/NumberKmRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Index/NumberKmRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JmDNS/ServiceDiscovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JmDNS/ServiceRegistration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/StatusGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/StatusImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/Status_Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/Status_client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Status/Status_server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TrackClient/TrackClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TrackServer/TrackImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TrackServer/TrackServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/status.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/track.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service1.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service2.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service3.proto" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="71154a17-9a06-4b0f-8d38-a9cea7a2d6fa" />
+        <option name="url" value="https://github.com/amoshea/SmartCar.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2MmAhPEO00e0iEuZQQwslPeloby" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2Mm5Q5V2yIveu5xShGGs9JfMFxT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,18 +100,123 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/arian/Projects/Smart-Energy",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.ClientGUI">
+    <configuration name="ClientGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SmartCarGUI.ClientGUI" />
+      <module name="SmartCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SmartCarGUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Status_client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Status.Status_client" />
+      <module name="SmartCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Status.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Status_server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Status.Status_server" />
+      <module name="SmartCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Status.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrackClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TrackClient.TrackClient" />
+      <module name="SmartCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TrackClient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrackServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TrackServer.TrackServer" />
+      <module name="SmartCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TrackServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SmartEnergy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SmartEnergy" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientGUI" />
+        <item itemvalue="Application.Status_client" />
+        <item itemvalue="Application.Status_server" />
+        <item itemvalue="Application.TrackClient" />
+        <item itemvalue="Application.TrackServer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="38081be4-c7f7-42c9-bdfb-92bcad15b05d" name="Changes" comment="" />
-      <created>1678362509500</created>
+      <changelist id="8c688d2b-846f-45e3-bdbf-3cbfe919d58f" name="Changes" comment="" />
+      <created>1678359903522</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678362509500</updated>
+      <updated>1678359903522</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
