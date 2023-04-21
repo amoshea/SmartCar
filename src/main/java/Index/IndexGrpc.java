@@ -1,5 +1,7 @@
 package Index;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
@@ -95,6 +97,10 @@ public class IndexGrpc {
                                             this, METHODID_INDEX)))
                     .build();
         }
+
+        public abstract StreamObserver<NumberKmRequest> total(StreamObserver<AnalysisResponse> responseObserver);
+
+        public abstract StreamObserver<NumberKmRequest> usage(StreamObserver<AnalysisResponse> responseObserver);
     }
 
     /**
@@ -143,6 +149,10 @@ public class IndexGrpc {
         protected IndexBlockingStub build(io.grpc.Channel channel,
                                                 io.grpc.CallOptions callOptions) {
             return new IndexBlockingStub(channel, callOptions);
+        }
+
+        public AnalysisResponse index(NumberKmRequest request) {
+            return null;
         }
     }
 

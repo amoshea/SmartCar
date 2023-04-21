@@ -4,46 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c688d2b-846f-45e3-bdbf-3cbfe919d58f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/index.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/AnalysisResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/AnalysisResponseOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/IndexGrpc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/IndexImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/Index_Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/Index_client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/Index_server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/NumberKmRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Index/NumberKmRequestOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JmDNS/ServiceDiscovery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JmDNS/ServiceRegistration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusRequestOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusResponseOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/StatusGrpc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/StatusImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/Status_Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/Status_client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status/Status_server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackGrpc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackRequestOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Track/TrackResponseOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TrackClient/TrackClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TrackServer/TrackImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TrackServer/TrackServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/status.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/track.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8c688d2b-846f-45e3-bdbf-3cbfe919d58f" name="Changes" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/lang/annotations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SmartCarGUI/ClientGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service1.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service2.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service3.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Index/IndexGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Index/IndexGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Index/Index_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Index/Index_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Index/Index_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Index/Index_client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Index/Index_server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Index/Index_server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Status/FilterStatusResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Status/FilterStatusResponseOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Status/FilterStatusResponseOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Status/StatusGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Status/StatusGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Status/Status_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Status/Status_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Status/Status_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Status/Status_client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Status/Status_server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Status/Status_server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrackClient/TrackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TrackClient/TrackClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +99,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Index_client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Index.Index_client" />
+      <module name="SmartCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Index.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Index_server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Index.Index_server" />
+      <module name="SmartCar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Index.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Status_client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Status.Status_client" />
       <module name="SmartCar" />
@@ -148,32 +151,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrackClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TrackClient.TrackClient" />
-      <module name="SmartCar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TrackClient.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrackServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TrackServer.TrackServer" />
-      <module name="SmartCar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TrackServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SmartEnergy" />
       <method v="2">
@@ -190,10 +167,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ClientGUI" />
+        <item itemvalue="Application.Index_client" />
+        <item itemvalue="Application.Index_server" />
         <item itemvalue="Application.Status_client" />
         <item itemvalue="Application.Status_server" />
-        <item itemvalue="Application.TrackClient" />
-        <item itemvalue="Application.TrackServer" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +183,14 @@
       <option name="presentableId" value="Default" />
       <updated>1678359903522</updated>
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1682009799506</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682009799506</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,5 +203,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>

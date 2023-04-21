@@ -1,47 +1,40 @@
 package Index;
 
-import Index.IndexGrpc.IndexImplBase;
 import io.grpc.stub.StreamObserver;
 
-public class Index_Impl extends IndexImplBase {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Logger;
+
+public class Index_Impl extends IndexGrpc.IndexImplBase {
+
+    private final List<Double> readings = new ArrayList<>();
 
     @Override
-    public StreamObserver<NumberKmRequest> index(StreamObserver<AnalysisResponse> responseObserver) {
+    public StreamObserver<NumberKmRequest> total(StreamObserver<AnalysisResponse> responseObserver) {
         return new StreamObserver<NumberKmRequest>() {
             @Override
             public void onNext(NumberKmRequest request) {
-                double kilometer = request.getKm();
-                String rate = getStatusKm(kilometer);
-                AnalysisResponse response = AnalysisResponse.newBuilder()
-                        .setTotal(rate).build();
-                responseObserver.onNext(response);
+                readings.add(request.getKm());
             }
 
             @Override
             public void onError(Throwable t) {
+                Logger.getLogger(Index_Impl.class.getName()).warning("Total failed with error " + t.getMessage());
             }
 
             @Override
             public void onCompleted() {
+                double sum = 0;
+                AnalysisResponse response = AnalysisResponse.newBuilder().setTotal(String.valueOf(sum)).build();
+                responseObserver.onNext(response);
                 responseObserver.onCompleted();
             }
         };
     }
-    public static String getStatusKm(double km)
-    {
 
-        if (km < 1000)
-        {	return " Very low pollution index";
-        } else if (km < 2000)
-        {	return "Low pollution index";
-        } else if (km < 5000)
-        {	return "Acceptable pollution index";
-        } else if (km < 10000)
-        {	return "Pollution index in state of attention";
-        } else if (km < 15000)
-        {	return "Attention, high pollution index";
-        } else
-        {	return "Problem!";
-        }
+    @Override
+    public StreamObserver<NumberKmRequest> usage(StreamObserver<AnalysisResponse> responseObserver) {
+        return null;
     }
 }

@@ -14,7 +14,7 @@ public class Status_server extends StatusImplBase {
         System.out.println("Starting gRPC FilterStatusService service server.");
 
         //Define the port
-        int port = 8089;
+        int port = 50052;
 
         // jmDNS
         String service_type = "_FilterStatusService._tcp.local.";

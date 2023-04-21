@@ -147,6 +147,10 @@ public class StatusGrpc {
             return blockingServerStreamingCall(
                     getChannel(), getStatusMethod(), getCallOptions(), request);
         }
+
+        public FilterStatusResponse status(FilterStatusRequest request) {
+            return null;
+        }
     }
 
     /**

@@ -10,5 +10,5 @@ public interface FilterStatusResponseOrBuilder extends
     /**
      * <code>double filterStatusCurr = 1;</code>
      */
-    double getFilterStatusCurr();
+    double filterStatusCurr();
 }

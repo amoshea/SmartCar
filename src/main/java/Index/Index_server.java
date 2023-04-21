@@ -1,33 +1,36 @@
 package Index;
 
+import JmDNS.ServiceRegistration;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import Index.IndexGrpc.IndexImplBase;
-import JmDNS.ServiceRegistration;
 
-public class Index_server extends IndexImplBase{
-    public static void main(String[] args) {
-        Index_server server2 = new Index_server();
+import java.io.IOException;
 
-        System.out.println("Starting gRPC IndexPollution service server.");
+public class Index_server{
+    public static void main(String[] args) throws IOException, InterruptedException {
 
-        //Define the port
-        int port = 8088;
 
-        // jmDNS
+
+        System.out.println("Starting gRPC IndexPollution Service server...");
+
+        //Defining port
+        int port = 50052;
+
+        // JmDNS
         String service_type = "_Index._tcp.local.";
         String service_name = "GrpcServer";
         ServiceRegistration ssr = new ServiceRegistration();
         ssr.run(port, service_type, service_name);
 
+        // Build and start the server
         try {
             Server server = ServerBuilder.forPort(port)
-
                     //Implementing the interface
                     .addService(new Index_Impl())
-                    .build()
-                    .start();
+                    .build();
+            server.start();
             System.out.println("Server started, listening on " + port);
+            // Wait for the server to shut down
             server.awaitTermination();
         } catch (Exception e) {
             System.out.println(e);

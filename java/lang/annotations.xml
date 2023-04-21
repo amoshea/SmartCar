@@ -1,0 +1,8 @@
+<root>
+    <item name='java.lang.NumberFormatException java.lang.NumberFormatException forInputString(java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val name="value" val="&quot;_,_-&gt;new&quot;"/>
+            <val name="pure" val="true"/>
+        </annotation>
+    </item>
+</root>

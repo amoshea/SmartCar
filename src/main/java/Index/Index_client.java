@@ -5,7 +5,6 @@ import JmDNS.ServiceDiscovery;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
-
 import javax.jmdns.ServiceInfo;
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
@@ -23,7 +22,7 @@ public class Index_client {
         serviceInfo = ServiceDiscovery.run(service_type);
 
         // port & host
-        int port = 8088;
+        int port = 50052;
         String host = "localhost";
 
         // build a channel
@@ -55,22 +54,26 @@ public class Index_client {
                     }
 
                     @Override
+                    // Handle errors
                     public void onError(Throwable t) {
+                        System.out.println("RPC call was canceled");
                     }
-
                     @Override
                     public void onCompleted() {
                         latch.countDown();
                     }
                 });
-
-        for (int i=0; i<5; i++)
+        double total = 0;
+        for (int i=0; i<5; i++)//Define analysis for 5 sending mileage
         {
-            int number = createRandomNumber(60, 190);
-            System.out.println("Sending Mileage "+number+" to server...");
+            int number = createRandomNumber(10, 500);//Setting random mileage
+
+            System.out.println("Sending Mileage "+number+"km to server...");
+            total += number;
             requestObserver.onNext(NumberKmRequest.newBuilder()
                     .setKm(number).build());
         }
+        System.out.println("Total Pollution Index: " + String.format("%.2f", total) + "%");
         requestObserver.onCompleted();
         try {
             latch.await(3, TimeUnit.SECONDS);

@@ -7,10 +7,10 @@ package Status;
  */
 public class FilterStatusResponse extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:SmartCar.FilterStatusResponse)
         FilterStatusResponseOrBuilder{
 
     private static final long serialVersionUID = 0L;
+
     // Use FilterStatusResponse.newBuilder() to construct.
     private FilterStatusResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
@@ -44,8 +44,7 @@ public class FilterStatusResponse extends
                         done = true;
                         break;
                     case 9: {
-
-                        filterStatusCurr_ = input.readDouble();
+                        filterStatusCurr_  = input.readDouble();
                         break;
                     }
                     default: {
@@ -67,26 +66,25 @@ public class FilterStatusResponse extends
             makeExtensionsImmutable();
         }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-        return Status.StatusImpl.internal_static_SmartCar_FilterStatusResponse_descriptor;
+    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+        return StatusImpl.internal_static_SmartCar_FilterStatusRequest_descriptor;
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-        return Status.StatusImpl.internal_static_SmartCar_FilterStatusResponse_fieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+        return StatusImpl.internal_static_SmartCar_FilterStatusResponse_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                        Status.FilterStatusResponse.class,Status.FilterStatusResponse.Builder.class);
+                        Status.FilterStatusResponse.class, Status.FilterStatusResponse.Builder.class);
     }
 
-    public static final int FILTERSTATUSCURR_FIELD_NUMBER = 1;
+    public static final int STATUS_CURR_FIELD_NUMBER = 1;
     private double filterStatusCurr_;
+
     /**
-     * <code>double filterStatusCurr = 1;</code>
+     * <code> double filterStatusCurr = 1; </code>
      */
-    public double getFilterStatusCurr_() {
-        return filterStatusCurr_;
+    public double getFilterStatusCurr() {
+        return filterStatusCurr_ ;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -95,7 +93,6 @@ public class FilterStatusResponse extends
         byte isInitialized = memoizedIsInitialized;
         if (isInitialized == 1) return true;
         if (isInitialized == 0) return false;
-
         memoizedIsInitialized = 1;
         return true;
     }
@@ -104,7 +101,7 @@ public class FilterStatusResponse extends
     public void writeTo(com.google.protobuf.CodedOutputStream output)
             throws java.io.IOException {
         if (filterStatusCurr_ != 0D) {
-            output.writeDouble(1, filterStatusCurr_);
+            output.writeDouble(1, filterStatusCurr_ );
         }
         unknownFields.writeTo(output);
     }
@@ -113,11 +110,10 @@ public class FilterStatusResponse extends
     public int getSerializedSize() {
         int size = memoizedSize;
         if (size != -1) return size;
-
         size = 0;
         if (filterStatusCurr_ != 0D) {
             size += com.google.protobuf.CodedOutputStream
-                    .computeDoubleSize(1, filterStatusCurr_);
+                    .computeDoubleSize(1, filterStatusCurr_ );
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -133,7 +129,6 @@ public class FilterStatusResponse extends
             return super.equals(obj);
         }
         Status.FilterStatusResponse other = (Status.FilterStatusResponse) obj;
-
         boolean result = true;
         result = result && (
                 java.lang.Double.doubleToLongBits(getFilterStatusCurr())
@@ -150,7 +145,7 @@ public class FilterStatusResponse extends
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
-        hash = (37 * hash) + FILTERSTATUSCURR_FIELD_NUMBER;
+        hash = (37 * hash) + STATUS_CURR_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
                 java.lang.Double.doubleToLongBits(getFilterStatusCurr()));
         hash = (29 * hash) + unknownFields.hashCode();
@@ -229,7 +224,9 @@ public class FilterStatusResponse extends
     }
 
     @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
+    public Builder newBuilderForType() {
+        return newBuilder();
+    }
     public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
     }
@@ -250,7 +247,7 @@ public class FilterStatusResponse extends
     }
 
     @Override
-    public double getFilterStatusCurr() {
+    public double filterStatusCurr() {
         return 0;
     }
 
@@ -259,22 +256,21 @@ public class FilterStatusResponse extends
      */
     public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:SmartCar.FilterResponse)
+            // @@protoc_insertion_point(builder_implements:SmartCar.FilterStatusResponse)
             FilterStatusResponseOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-            return Status.StatusImpl.internal_static_SmartCar_FilterStatusResponse_descriptor;
+            return StatusImpl.internal_static_SmartCar_FilterStatusResponse_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-            return Status.StatusImpl.internal_static_SmartCar_FilterStatusResponse_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            Status.FilterStatusResponse.class, Status.FilterStatusResponse.Builder.class);
+            return StatusImpl.internal_static_SmartCar_FilterStatusResponse_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(Status.FilterStatusResponse.class, Status.FilterStatusResponse.Builder.class);
         }
 
-        // Construct using GetHeartBeats.BeatsResponse.newBuilder()
+        // Construct using Status.FilterStatusResponse.newBuilder()
         private Builder() {
             maybeForceBuilderInitialization();
         }
@@ -292,8 +288,7 @@ public class FilterStatusResponse extends
         @java.lang.Override
         public Builder clear() {
             super.clear();
-            filterStatusCurr_ = 0D;
-
+            filterStatusCurr_  = 0D;
             return this;
         }
 
@@ -320,7 +315,7 @@ public class FilterStatusResponse extends
         @java.lang.Override
         public Status.FilterStatusResponse buildPartial() {
             Status.FilterStatusResponse result = new Status.FilterStatusResponse(this);
-            result.filterStatusCurr_ = filterStatusCurr_;
+            result. filterStatusCurr_=  filterStatusCurr_;
             onBuilt();
             return result;
         }
@@ -402,27 +397,27 @@ public class FilterStatusResponse extends
         }
 
         private double filterStatusCurr_ ;
+
         /**
-         * <code>double FilterStatusCurr = 1;</code>
+         * <code> double filterStatusCurr = 1; </code>
          */
-        public double getFilterStatusCurr() {
-            return filterStatusCurr_;
+        public double getTempCurr() {
+            return filterStatusCurr_ ;
         }
         /**
-         * <code>double FilterStatusCurr = 1;</code>
+         * <code> double filterStatusCurr = 1; </code>
          */
         public Builder setFilterStatusCurr(double value) {
-
             filterStatusCurr_ = value;
             onChanged();
             return this;
         }
+
         /**
-         * <code>double FilterStatusCurr = 1;</code>
+         * <code> double filterStatusCurr = 1; </code>
          */
         public Builder clearFilterStatusCurr() {
-
-            filterStatusCurr_ = 0D;
+            filterStatusCurr_  = 0D;
             onChanged();
             return this;
         }
@@ -438,7 +433,10 @@ public class FilterStatusResponse extends
             return super.mergeUnknownFields(unknownFields);
         }
 
-
+        @Override
+        public double filterStatusCurr() {
+            return 0;
+        }
         // @@protoc_insertion_point(builder_scope:SmartCar.FilterStatusResponse)
     }
 
